@@ -1,7 +1,7 @@
 ---
 title: "My Mod"
 description: "This blog article is about my minecraft mod - Elemental Tools"
-pubDate: "21st May 2025"
+pubDate: "May 21 2025"
 heroImage: "https://cdn.modrinth.com/data/sZhCLAWU/0eeff952cd9ce2dc44798b81f71320c8c304a694_96.webp"
 ---
 
