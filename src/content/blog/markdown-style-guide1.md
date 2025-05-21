@@ -1,8 +1,8 @@
 ---
-title: "Markdown Style Guide"
-description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-pubDate: "Jun 19 2024"
-heroImage: "/blog-placeholder-1.jpg"
+title: "My Mod"
+description: "This blog article is about my minecraft mod - Elemental Tools"
+pubDate: "21st May 2025"
+heroImage: "https://cdn.modrinth.com/data/sZhCLAWU/0eeff952cd9ce2dc44798b81f71320c8c304a694_96.webp"
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
