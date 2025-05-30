@@ -2,7 +2,7 @@
 title: "My Mod"
 description: "This blog article is about my minecraft mod - Elemental Tools"
 pubDate: "May 21 2025"
-heroImage: "https://raw.githubusercontent.com/Mars455/myhomepageresources/refs/heads/main/Screenshot%202025-05-21%20105503.png"
+heroImage: "https://cdn.modrinth.com/data/sZhCLAWU/0eeff952cd9ce2dc44798b81f71320c8c304a694_96.webp"
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
