@@ -1,20 +1,20 @@
 /*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
 
 :root {
-  --accent: #2337ff;
-  --accent-dark: #000d8a;
-  --black: 15, 18, 25;
-  --gray: 96, 115, 159;
-  --gray-light: 229, 233, 240;
-  --gray-dark: 34, 41, 57;
-  --gray-gradient: rgba(var(--gray-light), 50%), #fff;
+  --accent: #93b5ff; /* Lighter accent for dark mode */
+  --accent-dark: #6a8cdb;
+  --black: 240, 242, 245; /* White-ish for text */
+  --gray: 160, 179, 203; /* Lighter gray */
+  --gray-light: 45, 55, 72; /* Darker background for light elements */
+  --gray-dark: 200, 200, 200; /* Lighter gray for general text */
+  --gray-gradient: rgba(var(--gray-light), 50%), #1a202c; /* Darker background gradient */
   --box-shadow:
-    0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-    0 16px 32px rgba(var(--gray), 33%);
+    0 2px 6px rgba(var(--black), 10%), 0 8px 24px rgba(var(--black), 15%),
+    0 16px 32px rgba(var(--black), 20%);
 }
 @font-face {
   font-family: "Atkinson";
@@ -39,7 +39,7 @@ body {
   background-size: 100% 600px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  color: rgb(var(--gray-dark));
+  color: rgb(var(--gray-dark)); /* General text color */
   font-size: 20px;
   line-height: 1.7;
 }
@@ -56,7 +56,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 0.5rem 0;
-  color: rgb(var(--black));
+  color: rgb(var(--black)); /* Heading color */
   line-height: 1.2;
 }
 h1 {
@@ -82,7 +82,7 @@ a {
   color: var(--accent);
 }
 a:hover {
-  color: var(--accent);
+  color: var(--accent-dark); /* Darker accent on hover */
 }
 p {
   margin-bottom: 1em;
@@ -93,9 +93,15 @@ p {
 textarea {
   width: 100%;
   font-size: 16px;
+  background-color: rgb(var(--gray-light)); /* Darker background for text areas */
+  color: rgb(var(--gray-dark));
+  border: 1px solid rgb(var(--gray));
 }
 input {
   font-size: 16px;
+  background-color: rgb(var(--gray-light)); /* Darker background for inputs */
+  color: rgb(var(--gray-dark));
+  border: 1px solid rgb(var(--gray));
 }
 table {
   width: 100%;
@@ -107,25 +113,31 @@ img {
 }
 code {
   padding: 2px 5px;
-  background-color: rgb(var(--gray-light));
+  background-color: rgb(var(--gray-light)); /* Darker background for inline code */
   border-radius: 2px;
+  font-family: "Fira Code", "Cascadia Code", "Roboto Mono", monospace; /* Monospace font for code */
 }
 pre {
   padding: 1.5em;
   border-radius: 8px;
+  background-color: #2d3748; /* Darker background for code blocks */
+  color: #edf2f7; /* Lighter text for code blocks */
+  overflow-x: auto; /* Enable horizontal scrolling for pre blocks */
 }
 pre > code {
   all: unset;
+  font-family: "Fira Code", "Cascadia Code", "Roboto Mono", monospace; /* Monospace font for code blocks */
 }
 blockquote {
   border-left: 4px solid var(--accent);
   padding: 0 0 0 20px;
   margin: 0px;
   font-size: 1.333em;
+  color: rgb(var(--gray)); /* Lighter gray for blockquote text */
 }
 hr {
   border: none;
-  border-top: 1px solid rgb(var(--gray-light));
+  border-top: 1px solid rgb(var(--gray-light)); /* Darker line for HR */
 }
 @media (max-width: 720px) {
   body {
